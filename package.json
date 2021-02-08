@@ -1,0 +1,34 @@
+{
+  "name": "@arontier/openseadragon-screenshot",
+  "version": "1.0.0",
+  "description": "Plugin for openseadragon, which allows you to make a screenshot of your current viewport, with a user specified resolution.",
+  "main": "openseadragon-screenshot.js",
+  "homepage": "https://gitlab.com/arontier/node/openseadragon-scalebar#openseadragon-screenshot",
+  "dependencies": {
+    "canvas-toBlob": "^1.0.0",
+    "file-saver": "^2.0.5"
+  },
+  "peerDependencies": {
+    "openseadragon": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:arontier/node/openseadragon-screenshot.git"
+  },
+  "files": [
+    "!.git"
+  ],
+  "keywords": [
+    "openseadragon",
+    "plugin",
+    "screenshot"
+  ],
+  "author": "Koen Griffioen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/arontier/node/openseadragon-screenshot/issues"
+  }
+}

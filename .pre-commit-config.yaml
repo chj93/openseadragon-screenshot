@@ -1,0 +1,21 @@
+repos:
+  - repo: http://github.com/pre-commit/pre-commit-hooks
+    rev: 'v3.4.0'
+    hooks:
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-toml
+      - id: check-xml
+      # Covered by prettier later
+      #  - id: check-yaml
+      #  - id: end-of-file-fixer
+      #    exclude: "static"
+      - id: mixed-line-ending
+        args: ['--fix=lf']
+      - id: trailing-whitespace
+  - repo: http://github.com/pre-commit/mirrors-prettier
+    rev: 'v2.2.1'
+    hooks:
+      - id: prettier
+        args: ['--print-width=160', '--tab-width=2', '--single-quote=true']
